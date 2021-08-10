@@ -5,13 +5,19 @@
     --white-color: #ffffff;
     --background-color: #2f303a;
     --second-background: #f5f4fa;
-  }
-  
+    --adress-color: rgba(255, 255, 255, 0.6);
+}
+
   body {
     color: var(--primary-text-color);
   
     font-family: Roboto, sans-serif;
   }
+
+  address {
+    display: block;
+    font-style: normal;
+}
   
   .section-header {
     font-style: normal;
@@ -68,7 +74,7 @@
   .contacts a:focus {
     color: var(--accent-color);
   }
-  
+
   /* Секция фильтров */
   .hidden {
     display: none;
@@ -76,6 +82,7 @@
   .button {
     color: var(--primary-text-color);
     background-color: var(--second-background);
+    font-family: inherit;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
@@ -129,7 +136,7 @@
   }
   
   .footer-contacts a {
-    color: var(--white-color);
+    color: var(--adress-color);
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
